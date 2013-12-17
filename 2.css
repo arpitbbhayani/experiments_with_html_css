@@ -1,0 +1,198 @@
+html {
+    background: url(images/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1:first-letter {
+    font-size: 48px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+h2 {
+    /*color: #444;*/
+    padding-top: 26px;
+}
+
+header {
+    font-family: monospace;
+    text-align: center;
+    color: #000000;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    max-height: 75px;
+}
+
+article {
+    position: fixed;
+    width: 70%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 15%;
+    /*background-color: #444;*/
+    overflow: auto;
+    z-index: 0;
+}
+
+div.input_note {
+    text-align: center;
+    background: url(images/line.png) repeat-y;
+    background-position: -100px 0px;
+    position: fixed;
+    left: -16em;
+    top: 0;
+    bottom: 0;
+    background-color: #CEC087;
+    border-right: 50px solid rgba(241, 152, 70, 0.32);
+    box-shadow: 4px 0 5px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+    width: 16em;
+}
+ 
+div.input_note:after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    right: -70px;
+    top: 50%;
+    border-width: 15px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #765;
+}
+
+
+article, article:after, div.input_note , div.input_note * {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+div.input_note:hover {
+    left: 0;
+}
+
+textarea,input[type="text"] {
+    text-align: center;
+    font-family: cursive , arial , monospace;
+    font-weight: bold;
+    font-size: 16px;
+    outline:none;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid rgba(0,0,0, 0.2);
+
+    margin-top: 10px;
+}
+
+textarea:focus,input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+    border:1px solid rgba(0,0,255, 0.8); 
+}
+
+input[type=button] {
+    margin-top: 10px;
+    background: url(images/line.png) repeat-y;
+    background-position: -100px 0px;
+    border-collapse: collapse;
+    width: 7em;
+    height: 3em;
+    font-family: arial;
+    font-size: 16px;
+    border: 2px dotted #000000;
+}
+
+textarea {
+    width: 16em;
+    height: 15em;
+    font-family: arial , cursive , monospace;
+    font-size: 14px;
+    text-align: left;
+    padding: 2px;
+}
+
+#error {
+    padding-top: 10px;
+    color: red;
+    font-family: arial , serif ;
+    font-weight: bold;
+}
+
+.hide {
+    font-size: 0px;
+}
+
+#notes {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.note {
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid ;
+    width: 200px;
+    max-height: 250px;
+    min-height: 250px;
+    overflow: auto;
+    display: inline-block;
+    background: url(images/line.png) repeat-y;
+    background-position: -100px 0px;
+    margin: 2px;
+}
+
+.note:hover {
+    box-shadow: 0 0 5px rgba(255,255,255, 1);
+    -webkit-box-shadow: 0 0 5px rgba(255,255,255, 1); 
+    -moz-box-shadow: 0 0 5px rgba(255,255,255, 1);
+    border:2px solid rgba(255,255,255, 0.8); 
+}
+
+.title {
+    text-align: center;
+    font-family: cursive , arial , monospace;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2px;
+    max-height: 300px;
+    word-wrap: break-word;
+}
+
+.content {
+    padding: 2px;
+    max-height: 300px;
+    font-family: arial , cursive , monospace;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.time {
+    font-size: 12px;
+    font-style: italic;
+    color: rgba(0,0,0,0.5);
+}

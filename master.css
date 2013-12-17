@@ -1,0 +1,185 @@
+html {
+	background: url(images/background.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+h1 {
+	font-size: 16px;
+}
+
+h1:hover,h2:hover {
+	color: #ABFFFF; 
+}
+
+#header {
+	font-family: monospace;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+		max-height: 75px;
+}
+
+#footer {
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	margin-top: 5px;
+	color: #ffffff;
+	font-family: monospace;
+	max-height: 45px;
+	font-size: 16px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+span h2 {
+	display: inline-block;
+}
+
+span h2:hover {
+	color: #ABFFFF; 
+}
+
+#nav {
+	border-radius: 5px;
+	position: relative;
+	top: 75px;
+	width: 150px;
+	float: left;
+	margin-top: 100px;
+}
+
+a:link {
+	text-decoration:none;
+}
+
+a:visited {
+	text-decoration:none;
+}
+
+#nav > a:hover {
+	border-radius: 5px;
+	background-color: #ABFFFF;
+	border-right : 5px solid #f58220;
+	border-left : 5px solid #f58220;
+	color: #000000;
+}
+
+a:active {
+
+}
+
+#nav > a {
+	display: block;
+	width: 115px;
+	position: relative;
+	border-left : 5px solid #f58220;
+	padding-bottom: 1px;
+	margin-bottom: 2px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", "HelveticaNeueLT", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	color: #ffffff;
+	border-radius : 5px;
+	margin-bottom: 10px;
+	background-color: rgba(248, 248, 248, 0.15);
+}
+
+.footer > a {
+	color: #ffffff;
+}
+
+.display_panel {
+	position: fixed;
+	top: 75px;
+	left: 150px;
+	border-collapse: collapse;
+	border-radius: 10px;
+	margin-left: 10px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.display_panel > p {
+	font-size: 21px;
+	vertical-align: middle;
+}
+
+.validator {
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+}
+
+.text{
+
+	position: relative;
+	top: 75px;
+	width: 350px;
+	float: left;
+	margin-top: 135px;
+	margin-left: 50px;
+
+	font-family: monospace;
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.animated {
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes shake {
+	0%, 50% {-webkit-transform: translateX(0);}
+	5%, 15%, 25%, 35%, 45% {-webkit-transform: translateX(-10px);}
+	10%, 20%, 30%, 40% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.animated.shake {
+	-webkit-animation-name: shake;
+	-moz-animation-name: shake;
+	-o-animation-name: shake;
+	animation-name: shake;
+}

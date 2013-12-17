@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Question 3 - Image Galery</title>
+		<link rel="stylesheet" type="text/css" href="3.css" />
+		<script type="text/javascript" src="3.js"></script>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	</head>
+	<body onLoad="body_on_load()">
+		<div id="content">
+			<header>
+				<h1>Sports center</h1>
+			</header>
+
+			<div class="wrap_left">
+				<div class="input">
+		            Name : <input type="text" id="name" ><br/><strong id="name_err"></strong><br/>
+		            Password : <input type="password" id="pass" class="ok"><br/><strong id="pass_err"></strong><br/>
+		            Confirm Password : <input type="password" id="pass_c" ><br/><strong id="pass_c_err"></strong><br/>
+	        		Date of birth : <select id="month_select" onChange="change_month(this.value)">
+	        		<option>Month</option></select>
+	        		<select id="date_select" >
+	        		<option>Date</option></select>
+	        		<select id="year_select" onChange="change_year(this.value)">
+	        		<option>Year</option></select><br/><strong id="dob_err"></strong><br/>
+	        		Sport : <select id="sport_select" onChange="change_sport(this.value)">
+	        		<option>Select</option>
+	        		<option>Cricket</option>
+	        		<option>Football</option>
+	        		<option>Tennis</option>
+	        		</select>
+	        		Stadium : <select id="stadium_select" class="long">
+	        		<option>Select</option></select>
+	        	</div>
+	        </div>
+
+			<center><div id="slider" class="hide"></div><img id="shadow" src="images/shadow.png" class="hide" /></center>
+
+	        	<!--center><canvas id="canvas_slider">
+	        		Canvas
+	        	</canvas></center-->
+	        <center>
+	        	<span id="prev_button" onclick="prev_call()" title="See previous image"></span>
+	        	<span id="next_button" onclick="next_call()" title="See next image"></span>
+	    	</center>
+			
+			<center><input type="button" value="Validate" onclick="onclick_list()" /></center>
+		</div>
+	</body>
+</html>
